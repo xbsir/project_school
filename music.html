@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>背景音乐播放器</title>
+
+<!--字体图标样式-->
+<link rel='stylesheet' href='css/solid.css'>
+<link rel='stylesheet' href='css/fontawesome.css'>
+
+<!--布局样式-->
+<link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+<div style="z-index:99999;position:absolute;top:20px;left:30px">
+<video src="./mp3/7.mp4" autoplay controls></vidio>
+</div>
+<!-- 音乐播放器 -->
+<div id="app-cover">
+  <div id="bg-artwork"></div>
+  <div id="bg-layer"></div>
+  <div id="player">
+	<div id="player-track">
+	  <div id="album-name"></div>
+	  <div id="track-name"></div>
+	  <div id="track-time">
+		<div id="current-time"></div>
+		<div id="track-length"></div>
+	  </div>
+	  <div id="s-area">
+		<div id="ins-time"></div>
+		<div id="s-hover"></div>
+		<div id="seek-bar"></div>
+	  </div>
+	</div>
+	<div id="player-content">
+	  <div id="album-art">
+		<img src="images/1.jpg" class="active" id="_1">
+		<img src="images/2.jpg" id="_2">
+		<img src="images/3.jpg" id="_3">
+		<img src="images/4.jpg" id="_4">
+		<img src="images/5.jpg" id="_5">
+		<div id="buffer-box">缓冲…</div>
+	  </div>
+	  <div id="player-controls">
+		<div class="control">
+		  <div class="button" id="play-previous">
+			<i class="fas fa-backward"></i>
+		  </div>
+		</div>
+		<div class="control">
+		  <div class="button" id="play-pause-button">
+			<i class="fas fa-play"></i>
+		  </div>
+		</div>
+		<div class="control">
+		  <div class="button" id="play-next">
+			<i class="fas fa-forward"></i>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+<div style="z-index:99999;position:absolute;top:10px;right:10px;background:#cdcdcd">
+	<h1 style="margin-left:50px;">游戏操作指南</h1>
+	<span style="font-size:20px;color:cyan">1.飞机大战 鼠标左击选中飞机 上下左右移动</span><br>
+	<br>
+	<span style="font-size:20px;color:cyan">2.扫雷游戏 点击上方图标 雷或锄头 再点击操作区</span>
+	<br>
+	<br>
+	<span style="font-size:20px;color:cyan">3.贪吃蛇 按下enter键进入游戏 <br>上下左右控制方向 空格键暂停 结束游戏 按下空格键看分数</span>
+	<h3 style="margin-left:50px;color:red;">注意：以下游戏的原创并非作者本人</h3>
+</div>
+<div style="z-index:99999;position:absolute;bottom:20px;right:30px;background:#cdcdcd">
+<span style="font-size:40px;color:white;margin:50px;">放松一下?</span><br>
+<br>
+<span style="color:teal;margin-left:60px">飞机大战&nbsp;&nbsp;&nbsp;<a href="./games/feiji/index.html" style="text-decoration:none">进入游戏</a></span>
+<br>
+<br>
+<span style="color:teal;margin-left:60px">扫雷游戏&nbsp;&nbsp;&nbsp;<a href="./games/saolei/index.html" style="text-decoration:none">进入游戏</a></span>
+<br>
+<br>
+<span style="color:teal;margin-left:60px">贪吃蛇&nbsp;&nbsp;&nbsp;<a href="./games/snack/index.html" style="text-decoration:none">进入游戏</a></span>
+<br>
+<br>
+</div>
+<script src='js/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+
+
+</div>
+</body>
+</html>

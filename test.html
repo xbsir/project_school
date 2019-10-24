@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            RunJS 演示代码
+        </title>
+        <script>
+            var array = ['red', 'green', 'blue'], index = -1;
+            onload=function(){
+                setInterval(function(){
+                    index++;
+                    index = index > array.length - 1 ? 0 : index;
+                    div.style.color = array[index];
+                }, 500);
+            }
+        </script>
+  </head>
+    <body>
+    <div id="div">
+            自动变换颜色
+        </div>
+  </body>
+</html>
